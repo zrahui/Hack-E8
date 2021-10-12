@@ -1,0 +1,117 @@
+{
+ "properties": {
+  "displayName": "Essential 8",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "Regulatory Compliance",
+   "version": "0.1",
+   "createdBy": "272747a0-3900-4414-a401-f77dbde13992",
+   "createdOn": "2021-10-12T02:29:58.1723385Z",
+   "updatedBy": "272747a0-3900-4414-a401-f77dbde13992",
+   "updatedOn": "2021-10-12T04:20:39.2496719Z",
+   "ASC": "true"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "MFA should be enabled accounts with write permissions on your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9297c21d-2ed6-4474-b48f-163f75654ce3",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "MFA should be enabled on accounts with owner permissions on your subscription_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/aa633080-8b72-40c4-a2d7-d00c03e80bed",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "A vulnerability assessment solution should be enabled on your virtual machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/501541f7-f7e7-4cd6-868c-4190fdad3ac9",
+    "parameters": {},
+    "groupNames": [
+     "Vulnerability scanner"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Vulnerabilities in security configuration on your machines should be remediated_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e1e5fd5d-3e4c-4ce1-8661-7d1873ae6b15",
+    "parameters": {},
+    "groupNames": [
+     "Vulnerability scanner"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1239 - User-Installed Software_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0be51298-f643-4556-88af-d7db90794879",
+    "parameters": {},
+    "groupNames": [
+     "Validate privileged access"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1038 - Least Privilege | Privileged Accounts_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/26692e88-71b7-4a5f-a8ac-9f31dd05bd8e",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Microsoft Managed Control 1043 - Least Privilege | Prohibit Non-Privileged Users From Executing Priv_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/361a77f6-0f9c-4748-8eec-bc13aaaa2455",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "Application Control",
+    "category": "1.0 Application Control",
+    "description": "The execution of executables, software libraries, scripts, installers, compiled HTML, HTML \napplications and control panel applets is prevented on workstations from within standard \nuser profiles and temporary folders used by the operating system, web browsers and \nemail clients."
+   },
+   {
+    "name": "Patches applied within 2 weeks",
+    "category": "2.0 Patch Applications",
+    "description": "Patches, updates or vendor mitigations for security vulnerabilities in internet-facing  services are applied within two weeks of release, or within 48 hours if an exploit exists."
+   },
+   {
+    "name": "Patches applied within 1 month",
+    "category": "2.0 Patch Applications",
+    "description": "Patches, updates or vendor mitigations for security vulnerabilities in office productivity \nsuites, web browsers and their extensions, email clients, PDF software, and security \nproducts are applied within one month of release."
+   },
+   {
+    "name": "Vulnerability scanner",
+    "category": "2.0 Patch Applications",
+    "description": "A vulnerability scanner is used at least daily to identify missing patches or updates for\nsecurity vulnerabilities in internet-facing services."
+   },
+   {
+    "name": "Microsoft Office macros are disabled",
+    "category": "3.0 Configure Microsoft Office macro settings",
+    "description": "Microsoft Office macros are disabled for users that do not have a demonstrated business \nrequirement."
+   },
+   {
+    "name": "Microsoft Office from the internet are blocked.",
+    "category": "3.0 Configure Microsoft Office macro settings",
+    "description": "Microsoft Office macros in files originating from the internet are blocked."
+   },
+   {
+    "name": "Internet Explorer 11 does not process content from the internet",
+    "category": "4.0 User application hardening",
+    "description": "nternet Explorer 11 does not process content from the internet"
+   },
+   {
+    "name": "Validate privileged access",
+    "category": "5.0 Restrict administrative privileges",
+    "description": "Requests for privileged access to systems and applications are validated when first \nrequested.\n"
+   },
+   {
+    "name": "Patch internet facing services",
+    "category": "6.0 Patch operating systems",
+    "description": "Patches, updates or vendor mitigations for security vulnerabilities in operating systems of\ninternet-facing services are applied within two weeks of release, or within 48 hours if an \nexploit exists."
+   }
+  ]
+ },
+ "id": "/subscriptions/53044dad-452b-4b88-8dc0-89acc178ba74/providers/Microsoft.Authorization/policySetDefinitions/f4d979db34ae4981bbe9fc70",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "f4d979db34ae4981bbe9fc70"
+}
