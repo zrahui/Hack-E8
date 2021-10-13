@@ -1,0 +1,65 @@
+{
+ "properties": {
+  "displayName": "ACSC Essential 8 - Hack",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "Regulatory Compliance",
+   "version": "0.1",
+   "createdBy": "272747a0-3900-4414-a401-f77dbde13992",
+   "createdOn": "2021-10-12T05:26:20.283791Z",
+   "updatedBy": "272747a0-3900-4414-a401-f77dbde13992",
+   "updatedOn": "2021-10-12T07:33:08.4928146Z",
+   "ASC": "true"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Adaptive application controls for defining safe applications should be enabled on your machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/47a6b606-51aa-4496-8bb7-64b11cf66adc",
+    "parameters": {},
+    "groupNames": [
+     "Application control"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Allowlist rules in your adaptive application control policy should be updated_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/123a3936-f020-408a-ba0c-47873faf1534",
+    "parameters": {},
+    "groupNames": [
+     "Application control"
+    ]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "Application control",
+    "category": ""
+   },
+   {
+    "name": "Patch applications"
+   },
+   {
+    "name": "Configure Microsoft Office macro settings"
+   },
+   {
+    "name": "User application hardening"
+   },
+   {
+    "name": "Restrict administrative privileges"
+   },
+   {
+    "name": "Patch operating systems"
+   },
+   {
+    "name": "Multi-factor authentication"
+   },
+   {
+    "name": "Regular backups"
+   }
+  ]
+ },
+ "id": "/subscriptions/53044dad-452b-4b88-8dc0-89acc178ba74/providers/Microsoft.Authorization/policySetDefinitions/f9acbf80d90e47fba477f508",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "f9acbf80d90e47fba477f508"
+}
